@@ -1,0 +1,87 @@
+  .container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: #444444;
+}
+
+/*.container > div > p{
+  justify-content: center;
+      align-items: center;
+
+}*/
+
+html, body {
+  background-color: #444444;
+  margin: 10px;
+}
+
+.container > div:nth-child(1n) {
+  background-color: #96ceb4;  
+}
+
+.container > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.container > div:nth-child(2n) {
+      background-color: #ff6f69;
+}
+
+.container > div:nth-child(4n) {
+      background-color: #ffcc5c;
+}
+
+.container {
+  /*by giving 100% height to container and auto height to middle row page becomes more responsive*/
+  height: 100%;
+    display: grid;
+    /*for each column to take up 1 fraction of the unit:*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    /*or:*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*grid-template-rows: 50px 50px;*/
+
+    /************************************/
+
+    /* columns / rows: */
+    grid-template: repeat(9, 400px) / repeat(3, 1fr);
+    /*grid-template: 50px auto 50px / repeat(3, 1fr);*/
+    grid-gap: 3px;
+}
+
+/*.item1{
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}*/
+
+.item1{
+
+}
+
+.item2{
+  
+}
+
+.item3{
+  
+}
+
+.item4{
+  
+}
+
+.item5{
+  grid-column: 2 / 4;
+  /*grid-column: 1 / -1;*/
+    /*2nd row 2 spans*/
+    /*grid-row: 2 / span 2;   */
+}
+
+.item6{
+  /*grid-column: 1 / span 2;*/
+  /*********************/
+  /*if you want item6 to take up 2 columns when column number changes:*/
+  grid-column: 1 / -1;
+}
