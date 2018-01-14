@@ -1,14 +1,81 @@
-// Scope
-function scopes1a(){
-	var carName = "Volvo";
+
+
+// string break
+function stringBreak(){
+	document.getElementById('demo31').innerHTML="Hello Dolly!";
 }
 
+// backslash escape characters
+function backSlash(){
+	document.getElementById('demo30.a').innerHTML="It\'s alright.";
+	document.getElementById('demo30.b').innerHTML="We are the so-called \"Vikings\" from the north.";
+	document.getElementById('demo30.c').innerHTML="The character \\ is called backslash.";
+}
+
+// JavaScript Strings // with double or single quotes
+var stringX = "John Doe"; //->string written inside quotes
+// string length
+var lngth = stringX.length;
+function strings(){
+	document.getElementById('demo29').innerHTML = stringX + lngth;
+}
+
+// JavaScript Events
+function events(){
+	document.getElementById('demo28').innerHTML = 
+	"<b>onchange</b>" + "<br>" +
+  	"<b>onclick</b>" + "<br>" +
+	"<b>onmouseover</b>" + "<br>" +
+	"<b>onmouseout</b>" + "<br>" +
+	"<b>onkeydown</b>" + "<br>" +
+	"<b>onload</b>";
+	document.getElementById('demo28').innerHTML.style.display="inline-block";
+}
+
+// Scope
+//strict mode?
+function strictMode(){
+	document.getElementById('demo27').innerHTML = 
+	"?Global variables are not created automatically in <b>'Strict Mode'</b>."
+}
+
+// Automatically Global
+function autoGlobal(){
+	document.getElementById('demo26').innerHTML = 
+	"I can display " + carName3;
+}
+
+globalSc(); //fonksiyonu çalıştır!
+
+function globalSc(){
+	carName3 = "Volvo" //assigned a value, not declared.
+}
+
+// global js variables
+var carName2 = "Volvo";
+function globalScope(){
+	document.getElementById('demo24').innerHTML = 
+	"I can display " + carName2;
+} //change the code t/
+globalScope();
+// global variable'ın tanımlanmış olması için fonksiyonu çağır? //
+
+
+// _______________________________
+
+// local js variables
 function scopes1b(){
 	document.getElementById('demo23').innerHTML =
-	"var carName = 'Volvo'" + "<br />" +
-	"The type of carName is " + typeof carName;
+	"var carName1 = 'Volvo'" + "<br />" +
+	"The type of carName1 is " + typeof carName;
 	// document.getElementById('demo23').innerHTML.style.display="block";
 }
+
+function scopes1a(){
+	var carName1 = "Volvo";
+}
+
+// _______________________________
 
 function scopes1(){
 	document.getElementById('demo22').innerHTML = 

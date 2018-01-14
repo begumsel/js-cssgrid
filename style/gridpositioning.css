@@ -6,11 +6,9 @@
     color: #444444;
 }
 
-/*.container > div > p{
-  justify-content: center;
-      align-items: center;
-
-}*/
+.container > div > b, p{
+  display: block;
+}
 
 html, body {
   background-color: #444444;
@@ -34,8 +32,8 @@ html, body {
 }
 
 .container {
-  /*by giving 100% height to container and auto height to middle row page becomes more responsive*/
-  height: 100%;
+    /*by giving 100% height to container and auto height to middle row page becomes more responsive*/
+    height: 100%;
     display: grid;
     /*for each column to take up 1 fraction of the unit:*/
     /*grid-template-columns: 1fr 1fr 1fr;*/
@@ -46,7 +44,7 @@ html, body {
     /************************************/
 
     /* columns / rows: */
-    grid-template: repeat(9, 400px) / repeat(3, 1fr);
+    grid-template: repeat(13, 400px) / repeat(3, 1fr);
     /*grid-template: 50px auto 50px / repeat(3, 1fr);*/
     grid-gap: 3px;
 }

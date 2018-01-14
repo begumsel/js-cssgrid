@@ -2,8 +2,8 @@
 	
 <head>  
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="C:/Users/LENOVO/Documents/web-pages/css/gridpositioning.css">
-    <script src="js/w3-js.js"></script>
+	<link rel="stylesheet" href="C:/Users/LENOVO/Documents/web-pages/js&grid/style/gridpositioning.css">
+      <script src="C:\Users\LENOVO\Documents\web-pages\js&grid\w3-js.js"></script>
 </head>
 <body>
         <div class="container">
@@ -11,8 +11,6 @@
             <div class="two" id="demo2" onmouseover="undefinedVar()">2</div>
             <div class="three" id="demo3" onmouseover="concantenate()">Lorem ipsum dolor sit amet</div>
             <div class="four" id="demo4" onmouseover="leftRight()">
-
-            	<h2>My First JavaScript</h2>
 
             	<button type="button"
 				onclick="document.getElementById('demox').innerHTML = Date()">
@@ -93,18 +91,55 @@
             	<p>The local variable carName cannot be accessed from code outside the function:</p><br>
             	<p id="demo23"></p>
             </div>
-            <div id="demo24">
-            	
+            <div  onmouseover="globalScope()">
+                  <p>A GLOBAL VARIABLE has global scope: All scripts and functions on a web page can access it.</p>
+                  <code id="demo24">
+                        document.getElementById('demo24').innerHTML = 
+                        "I can display " + carName2;
+                  </code> 
             </div>
             <div id="demo25">
-            	
+            	<b>-25-JavaScript Variables</b>
+                  <p>In JavaScript, objects and functions are also variables.</p>
+                  <b>Scope determines the accessibility of variables, objects, and functions from different parts of the code.</b>
             </div>
-            <div id="demo26">
-            	
+            <div onmouseover="autoGlobal()">
+            	<b>-26-Automatically Global</b><br>
+                  <p id="demo26">If you assign a value to a variable that has not been declared,it will automatically become a GLOBAL variable.
+                  </p>
             </div>
-            <div id="demo27">
-            	
+            <div id="demo27" onmouseover="strictMode()">
+            	-27-
             </div>
+            <div id="demo28" onmouseover="events()">
+                  <b>-28-Events</b>
+            </div>
+            <div id="demo29" onmouseover="strings()">
+                  <b>-29-Strings</b>
+            </div>
+            <div id="demo30" onmouseover="backSlash()">
+                  <b>backslash escape characters</b><br><br>
+                  <p id="demo30.a">It\'s alright.</p><br><br>
+                  <p id="demo30.b">We are the so-called \"Vikings\" from the north.</p><br><br>
+                  <p id="demo30.c">The character \\ is called backslash.</p>
+            </div>
+            <div onmouseover="stringBreak()">
+                  <p>-31-You can break a code line within a text string with a backslash.</p><br><br>
+                  <code id="demo31">document.getElementById("demo").innerHTML = "Hello \
+                  Dolly!";</code>                  
+            </div>
+            <div>
+                  <code id="demo32">
+                        
+                  </code>
+            </div>
+            <div id="demo33"></div>
+            <div id="demo34"></div>
+            <div id="demo35"></div>
+            <div id="demo36"></div>
+            <div id="demo37"></div>
+            <div id="demo38"></div>
+            <div id="demo39"></div>
         </div>
 </body>
 
